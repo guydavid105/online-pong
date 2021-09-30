@@ -3,13 +3,13 @@ from _thread import *
 import pickle
 from player import Player
 
-sever = "192.168.1.196"
+server = ""
 port = 5555
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
-    s.bind((sever, port))
+    s.bind((server, port))
 
 except socket.error as e:
     str(e)
